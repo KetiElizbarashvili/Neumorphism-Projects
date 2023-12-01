@@ -1,0 +1,182 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f6f7;
+    color: #4a5568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  a {
+    color: #4a5568;
+  }
+  
+  .text-muted {
+    color: #8fa3bc;
+  }
+  
+  .t1 {
+    font-size: 1.5rem;
+  }
+  
+  .t2 {
+    font-size: 1.25rem;
+  }
+  
+  .t3 {
+    font-size: 1rem;
+  }
+  
+  .t4 {
+    font-size: 0.85rem;
+  }
+  
+  .t5 {
+    font-size: 0.5rem;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .container {
+    height: 600px;
+    width: 300px;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+    border-radius: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .toggle-group label, .btn, button {
+    color: inherit;
+    position: relative;
+    background: inherit;
+    outline: none;
+    border: none;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .toggle-group input:checked + label::after, .btn.active::after, button:focus::after, button:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+  }
+  
+  button {
+    padding: 0.5rem 0.75rem;
+    border-radius: 50px;
+  }
+  button svg.feather {
+    color: #8fa3bc;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 20px;
+
+  }
+  
+  .btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 50px;
+  }
+  .btn.active {
+    color: #4a5568;
+    border-radius: 50px;
+
+  }
+  main {
+    padding: 1.5rem 0.25rem;
+  }
+  
+  .toggle-group {
+    display: flex;
+    justify-content: space-around;
+  }
+  .toggle-group label {
+    flex: 1;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 8px;
+  }
+  .toggle-group label:first-of-type {
+    margin-right: 1rem;
+  }
+  .toggle-group input {
+    display: none;
+  }
+  .toggle-group input:checked + label::after {
+    border-radius: 8px;
+  }
+  
+  .chart {
+    position: relative;
+    border-radius: 50%;
+    margin: 2rem;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #DFE4EA;
+    /* inner shadow */
+  }
+  .chart::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    margin: 3rem;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+  }
+  .chart .chart-label {
+    position: absolute;
+    top: 0;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .chart .chart-label span {
+    display: block;
+  }
+  
+  #btntransactions {
+    padding: 0.75rem;
+  }
+  
+  #chartfill {
+    animation: chart 200ms linear forwards;
+  }
+  
+  @keyframes chart {
+    from {
+      stroke-dashoffset: 145;
+    }
+    to {
+      stroke-dashoffset: 110;
+    }
+  } 

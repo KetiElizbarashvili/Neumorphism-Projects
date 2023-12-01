@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>  
+
+<div class="container">
+    <header>
+      <nav>
+        <button type="button"><i data-feather="arrow-left"></i></button>
+        <button type="button"><i data-feather="search"></i></button>
+      </nav>
+    </header>
+    <main>
+      <h1 class="t1">History</h1>
+      <div class="toggle-group">
+        <input id="today-date" type="radio" name="date-choose">
+        <label for="today-date" class="t4">Today</label>
+        <input id="yesterday-date" type="radio" name="date-choose" checked>
+        <label for="yesterday-date" class="t4">Yesterday</label>
+      </div>
+      <div class="chart">
+        <div class="chart-label">
+          <span class="t2">45%</span>
+          <span class="text-muted">saving</span>
+        </div>
+        <svg class="progress" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <circle r="40" cx="50" cy="50" stroke-width="7" fill="transparent" stroke="#E2E8F0"></circle>
+          <circle id="chartfill" r="40" cx="50" cy="50" stroke-width="7" stroke-dasharray="245" stroke-dashoffset="245" fill="transparent" stroke="#D53F8C" stroke-linecap="round" class="meter"></circle>
+              </svg>
+      </div>
+      <button id="btntransactions" class="t4 w-100">Show my transactions</button>
+    </main>
+    <nav>
+      <a href="#" class="btn text-muted"><i data-feather="home"></i></a>
+      <a href="#" class="btn text-muted"><i data-feather="credit-card"></i></a>
+      <a href="#" class="btn text-muted active"><i data-feather="trending-up"></i></a>
+      <a href="#" class="btn text-muted"><i data-feather="bell"></i></a>
+    </nav>
+  </div>
+
+  </body>
+  </html>
+  
